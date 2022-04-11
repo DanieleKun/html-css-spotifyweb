@@ -9,6 +9,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+
 /* Left menu */
 #left-menu {
     width: 15%;
@@ -16,13 +21,56 @@ body {
     background-color: black;
     position: fixed;
     z-index: 400;
+    padding: 0 10px;
 }
 
 #left-menu img {
     width: 150px;
     height: auto;
-    margin: 15px 10px;
+    margin: 15px 0;
 }
+
+#left-menu ul li {
+    margin-bottom: 10px;
+}
+
+/* Icon */
+#left-menu ul li a .fas{
+    font-size: 20px;
+}
+
+#left-menu ul li a:hover {
+    color: white;
+    border-left: 2px solid yellow;
+    padding-left: 15px;
+}
+
+/* Playlist */
+#playlist {
+    color: white;
+    margin-top: 20px;
+}
+#playlist a .fa-plus{
+    background-color: rgb(95, 95, 95);
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 5px 10px 0
+}
+
+/* Footer left menu */
+#foot-leftmenu h4 {
+    color: white;
+    display: inline-block;
+} 
+
+#foot-leftmenu hr{
+    border: 1px solid grey;
+    margin: 10px 0;
+}
+
+
+
 
 /* Header trasparent */
 #fix-header {
@@ -41,6 +89,7 @@ body {
     border: 1px solid white;
     text-decoration: none;
     padding: 10px 30px;
+    margin-right: 10px;
     border-radius: 25px;
 }
 
@@ -52,7 +101,7 @@ body {
 
 /* Media player footer */
 #player-container {
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
