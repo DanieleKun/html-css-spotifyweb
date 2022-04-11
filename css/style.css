@@ -18,12 +18,30 @@ body {
     z-index: 400;
 }
 
+#left-menu img {
+    width: 150px;
+    height: auto;
+    margin: 15px 10px;
+}
+
 /* Header trasparent */
 #fix-header {
     height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button a {
+    background-color: rgb(8, 11, 18);
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
 }
 
 /* Body main page */
