@@ -1,3 +1,19 @@
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(20, 25, 34);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 95);
+    border-radius: 20px;
+    border: 3px solid rgb(20, 25, 34);
+  }
+
+
 /* General */
 * {
     margin: 0;
@@ -17,7 +33,7 @@ a {
 
 /* Left menu */
 #left-menu {
-    width: 15%;
+    width: 200px;
     height: 100%;
     background-color: black;
     position: fixed;
@@ -226,6 +242,14 @@ a {
     margin-right: 10px;
 }
 
+#player-container .left .fa-heart:hover {
+    color: rgb(255, 51, 51);
+}
+
+#player-container .left .fa-folder:hover {
+    color: white;
+}
+
 .song-name h4 {
     color: white;
 }
@@ -259,3 +283,6 @@ a {
     font-size: 15px;
     margin: 0 10px;
 }
+
+
+
