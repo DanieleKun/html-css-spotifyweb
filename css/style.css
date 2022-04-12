@@ -159,6 +159,30 @@ a {
 .album-logo {
     width: 200px;
     height: 240px;
+    position: relative;
+}
+
+/* Hover play album */
+.hover-play {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    display: none;
+}
+
+.hover-play .fa-play-circle {
+    height: 150px;
+    line-height: 150px;
+    vertical-align: middle;
+    font-size: 40px;
+    color: white;
+}
+
+.album-logo:hover .hover-play{
+    display: block;
 }
 
 
