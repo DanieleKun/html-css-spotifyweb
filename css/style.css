@@ -81,12 +81,14 @@ a {
 
 /* Footer left menu */
 #foot-leftmenu {
-    width: 100%;
-    height: 100px;
+    width: 180px;
+    height: 80px;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: fixed;
+    bottom: 90px;
 }
 
 #foot-leftmenu h4 {
@@ -285,5 +287,32 @@ a {
     margin: 0 10px;
 }
 
+/* Progress bar */
+.progress-bar {
+    height: 5px;
+    width: 400px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+}
+
+.progress-bar-time {
+    height: 5px;
+    width: 100px;
+    background-color: rgb(193, 193, 193);
+}
+
+/* Little progress bar */
+.progress-bar-little {
+    height: 5px;
+    width: 100px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+}
+
+.progress-bar-time-little {
+    height: 5px;
+    width: 30px;
+    background-color: rgb(193, 193, 193);
+}
 
 
