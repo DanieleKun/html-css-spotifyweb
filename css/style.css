@@ -90,9 +90,12 @@ footer {
     background-color: black;
     padding: 0 10px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left-menu ul {
+    overflow: auto;
 }
 
 #left-menu img {
@@ -130,24 +133,22 @@ footer {
 }
 
 /* Footer left menu */
-#foot-leftmenu {
+#bottom {
     width: 180px;
-    height: 80px;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: fixed;
-    bottom: 90px;
+    padding: 5px 0;
 }
 
-#foot-leftmenu h4 {
+#bottom h4 {
     color: white;
     display: inline-block;
 } 
 
-#foot-leftmenu hr{
-    border: 1px solid grey;
+#bottom hr {
+    height: 1px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
     margin: 10px 0;
 }
 
