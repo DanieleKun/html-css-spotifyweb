@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,18 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
 </head>
+
 <body>
-    
-    <header>
+
+    <!-- Left menu -->
+    <aside>
+
         <!-- Left fixed menu -->
         <div id="left-menu">
             <figure>
@@ -63,16 +69,18 @@
             <div id="foot-leftmenu">
                 <a href="#"><i class="far fa-arrow-alt-circle-down"></i> Installa App</a>
                 <hr>
-                <a href="#"><i class="fas fa-user-circle"></i> <h4>Nicola Tesla</h4></a>
+                <a href="#"><i class="fas fa-user-circle"></i>
+                    <h4>Nicola Tesla</h4>
+                </a>
             </div>
         </div>
-                
-    </header>
 
+    </aside>
 
+    <!-- Main page -->
     <main>
-        <!-- Trasparent fixed header -->
-        <div id="fix-header">
+        <!-- Transparent header -->
+        <div id="call-to-action-header">
             <div class="button">
                 <a href="#">Effettua L'upgrade</a>
             </div>
@@ -103,100 +111,150 @@
             </nav>
 
             <!-- Main page -->
-            <h3>Recently played</h3>
-            <div class="main-page">
-                <div class="album-logo">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
+            <section id="recently-played">
+                <h3>Recently played</h3>
+                <div class="section-content">
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h4>Heavy Metal</h4>
+                            <h6>Subtitle</h6>
+                        </div>
                     </div>
-                    <h4>Heavy Metal</h4>
-                    <h6>Subtitle</h6>
-                </div>
 
-                <div class="album-logo">
-                    <img src="img/stranger.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
-                    </div>
-                    <h4>Stranger Things, Vol. 1 (a Netflix original Series Soundtrack)</h4>
-                    <h6>Kyle Dixon & Michael Stein</h6>
-                </div>
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/stranger.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
 
-                <div class="album-logo">
-                    <img src="img/aquietplace.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
-                    </div>
-                    <h4>A Quiet Place</h4>
-                    <h6>Subtitle</h6>
-                </div>
+                            <h4>Stranger Things, Vol. 1 (a Netflix original Series Soundtrack)</h4>
+                            <h6>Kyle Dixon & Michael Stein</h6>
 
-                <div class="album-logo">
-                    <img src="img/split.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
+                        </div>
                     </div>
-                    <h4>Split</h4>
-                    <h6>Subtitle</h6>
-                </div>
 
-                <div class="album-logo">
-                    <img src="img/cure.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h4>A Quiet Place</h4>
+                            <h6>Subtitle</h6>
+                        </div>
                     </div>
-                    <h4>A cure for wellness</h4>
-                    <h6>Subtitle</h6>
-                </div>
 
-                <div class="album-logo">
-                    <img src="img/sinister.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
-                    </div>
-                    <h4>Sinister</h4>
-                    <h6>Subtitle</h6>
-                </div>
-            </div>
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/split.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
 
-            <h3>Creato per John Doe</h3>
-            <h5>Più ascolti, più accurati saranno i tuoi suggerimenti</h5>
-            <div class="main-page">
-                <div class="album-logo">
-                    <img src="img/radar.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
+                            <h4>Split</h4>
+                            <h6>Subtitle</h6>
+                        </div>
                     </div>
-                    <h4>Release Radar</h4>
-                </div>
-                <div class="album-logo">
-                    <img src="img/mixdaily.jpeg" alt="">
-                    <div class="hover-play">
-                        <i class="far fa-play-circle"></i>
-                    </div>
-                    <h4>Daily Mix 1</h4>
-                </div>
-            </div>
 
-            <h3>Artisti più popolari</h3>
-            <h5>Più ascolti, più accurati saranno i tuoi suggerimenti</h5>
-            <div class="main-page">
-                <div class="album-logo circle-logo">
-                    <img src="img/youg.jpeg" alt="">
-                    <h4>Nome Artista</h4>
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/cure.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+
+                            <h4>A cure for wellness</h4>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/sinister.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h4>Sinister</h4>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="album-logo circle-logo">
-                    <img src="img/einaudi.jpeg" alt="">
-                    <h4>Nome Artista</h4>
+            </section>
+
+            <section>
+                <h3>Creato per John Doe
+                </h3>
+                <h5>Più ascolti, più accurati saranno i tuoi suggerimenti</h5>
+                <div class="section-content">
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/radar.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h4>Release Radar
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-logo">
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <div class="hover-play">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="description">
+
+                            <h4>Daily Mix 1
+                            </h4>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section>
+                <h3>Artisti più popolari</h3>
+                <h5>Più ascolti, più accurati saranno i tuoi suggerimenti</h5>
+                <div class="section-content">
+                    <div class="album-logo circle-logo">
+                        <img src="img/youg.jpeg" alt="">
+                            <h4 class="description">Nome Artista</h4>
+                    </div>
+                    <div class="album-logo circle-logo">
+                        <img src="img/einaudi.jpeg" alt="">
+                        <div class="description">
+                            <h4>Nome Artista</h4>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
         </div>
-
-        
-
     </main>
 
+    <!-- Media player -->
     <footer>
         <!-- Media player -->
         <div id="player-container">
@@ -218,13 +276,13 @@
                     <a href="#"><i class="far fa-play-circle"></i></a>
                     <a href="#"><i class="fas fa-step-forward"></i></a>
                     <a href="#"><i class="fas fa-redo-alt"></i></a>
+                </div>
 
-                    <!-- Big progress bar -->
-                    <div class="progress-bar-container">
-                        <div class="progress-bar">
-                            <div class="progress-bar-time">
+                <!-- Big progress bar -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress-bar-time">
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -236,17 +294,21 @@
                 <a href="#"><i class="fas fa-desktop"></i></a>
                 <a href="#"><i class="fas fa-volume-up"></i></a>
                 <a href="#"></a>
-            </div>
 
-            <!-- Little progress bar -->
+                <!-- Little progress bar -->
             <div class="progress-bar-container-little">
                 <div class="progress-bar-little">
                     <div class="progress-bar-time-little">
-                        
+
                     </div>
                 </div>
             </div>
+            </div>
+
+            
         </div>
     </footer>
+
 </body>
+
 </html>
