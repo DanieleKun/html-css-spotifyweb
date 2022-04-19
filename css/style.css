@@ -33,6 +33,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+}
+
+
 aside {
     width: 200px;
     height: calc(100vh - 80px);
@@ -50,6 +55,39 @@ footer {
     width: 100%;
     height: 80px;
     background-color: rgb(40, 40, 40);
+}
+
+/* pointer */
+.album,
+.progress-bar:hover,
+.progress-bar-little:hover {
+    cursor: pointer;
+}
+/* accent color and underline color */
+.accent-color,
+#left-menu ul li:before,
+#body-page nav ul li::after,
+.progress-bar:hover > .progress-bar-time,
+.progress-bar-little:hover > .progress-bar-time-little {
+    background-color: #86ff00;
+}
+
+.progress-bar.dot:after,
+.progress-bar-little.dot:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(193, 193, 193);
+    position: absolute;
+    top: -5.5px;
+    left: calc(30% - 8px);
+    display: none;
+}
+
+.progress-bar.dot:hover:after,
+.progress-bar-little.dot:hover:after{
+    display: block;
 }
 
 #call-to-action-header {
@@ -91,10 +129,9 @@ footer {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-#left-menu ul {
+#left-menu ul.playlist-scroll {
     overflow: auto;
 }
 
@@ -105,7 +142,8 @@ footer {
 }
 
 #left-menu ul li {
-    margin-bottom: 10px;
+    padding: 5px 0;
+    position: relative;
 }
 
 /* Icon */
@@ -113,10 +151,18 @@ footer {
     font-size: 20px;
 }
 
-#left-menu ul li a:hover {
-    color: white;
-    border-left: 2px solid yellow;
-    padding-left: 15px;
+#left-menu ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 2px;
+    height: 100%;
+    display: none;
+}
+
+#left-menu ul li:hover:before {
+    display: block;
 }
 
 /* Playlist */
@@ -137,6 +183,7 @@ footer {
     width: 180px;
     background-color: black;
     padding: 5px 0;
+    margin-top: auto;
 }
 
 #bottom h4 {
@@ -168,6 +215,26 @@ footer {
     display: inline-block;
     list-style-type: none;
     margin-right: 20px;
+}
+
+#body-page nav ul li {
+    position: relative;
+}
+
+#body-page nav ul li::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    bottom: -5px;
+	left: 0;
+    right: 0;
+	width: 50%;
+    height: 2px;
+    display: none;
+}
+
+#body-page nav ul li:hover::after {
+    display: block;
 }
 
 #body-page > nav > ul > li > a:hover {
@@ -319,17 +386,28 @@ h4.description {
 }
 
 /* Progress bar */
+.progress-bar-container {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.progress-bar-container > span {
+    font-size: 12px;
+}
+
 .progress-bar {
     height: 5px;
     width: 400px;
     background-color: rgb(90, 90, 90);
     border-radius: 20px;
-    margin-top: 10px;
+    margin: 0 10px;
+    position: relative;
 }
 
 .progress-bar-time {
     height: 5px;
-    width: 100px;
+    width: 30%;
     background-color: rgb(193, 193, 193);
 }
 
@@ -339,6 +417,7 @@ h4.description {
     width: 100px;
     background-color: rgb(90, 90, 90);
     border-radius: 20px;
+    position: relative;
 }
 
 .progress-bar-time-little {
